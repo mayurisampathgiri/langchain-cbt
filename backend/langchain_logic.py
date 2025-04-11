@@ -1,3 +1,3 @@
-async def analyze_thought(text: str) -> dict:
+async def analyze_thought(text: str) -> str:
     print("📥 Inside analyze_thought with:", text)
-    return {"advice": f"You said: {text}"}
+    return f"You said: {text}"
