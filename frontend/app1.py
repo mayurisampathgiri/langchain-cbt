@@ -6,7 +6,7 @@ from langchain_core.prompts import PromptTemplate
 openai_key = st.secrets["OPENAI_API_KEY"]
 
 # Initialize LLM
-llm = ChatOpenAI(api_key=openai_key, temperature=0.7)
+llm = ChatOpenAI(api_key=openai_key, model="gpt-3.5-turbo", temperature=0.7)
 
 # Define CBT prompt
 prompt = PromptTemplate.from_template("""
