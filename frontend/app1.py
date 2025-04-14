@@ -24,7 +24,7 @@ st.set_page_config(page_title="CBT Thought Reframer", page_icon="🧠")
 st.title("🧠 CBT Thought Reframer")
 st.markdown("Enter a negative or unhelpful thought below. This app will help reframe it using CBT-style guidance.")
 
-user_input = st.text_area("💭 Your Thought", height=140)
+user_input = st.text_area("💬 Your Thought", placeholder="e.g., I feel like I’m failing at everything.")
 
 if st.button("Analyze Thought"):
     if not user_input.strip():
